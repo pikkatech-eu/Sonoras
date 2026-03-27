@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<BaseOutputPath>C:\pikkatech.eu\Projects\Spheres\Gnomon\Code\CSharp\Sonoras\Binary</BaseOutputPath>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<ApplicationIcon>sonoras.ico</ApplicationIcon>
+		<Title>Sonoras</Title>
+		<Description>Lightweight framework and application for the calculation of solar events.</Description>
+		<Copyright>pikkatech.eu</Copyright>
+		<PackageIcon>sonoras-2.png</PackageIcon>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;CS0168;CS0414;CS8600;CS8602;CS8603;CS8604;CS8605;CS8618;CS8625;CS8629;CS8714;IDE0028;IDE0090</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;CS0168;CS0414;CS8600;CS8602;CS8603;CS8604;CS8605;CS8618;CS8625;CS8629;CS8714;IDE0028;IDE0090</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\cover.png" />
+	  <None Remove="Resources\gazetteer_load_32.png" />
+	  <None Remove="Resources\gazetteer_new_32.png" />
+	  <None Remove="Resources\gazetteer_save_32.png" />
+	  <None Remove="Resources\settings_32.png" />
+	  <None Remove="Resources\sonoras_close_32.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="sonoras.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\gazetteer_load_32.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\gazetteer_new_32.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\gazetteer_save_32.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\settings_32.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\sonoras_close_32.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\..\..\Design\Images\PNG\sonoras-2.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="C:\pikkatech.eu\Projects\Root\Factotum\Code\CSharp\Factotum\Factotum.csproj" />
+	  <ProjectReference Include="..\Sonoras.Application\Sonoras.Application.csproj" />
+	  <ProjectReference Include="..\Sonoras.UI.WinForms\Sonoras.UI.WinForms.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>PublicResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command=" xcopy &quot;$(ProjectDir)..\..\..\..\version.toml&quot; &quot;$(TargetDir)&quot; /Y" />
+	</Target>
+
+</Project>
