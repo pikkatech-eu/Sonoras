@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<BaseOutputPath>C:\pikkatech.eu\Projects\Spheres\Gnomon\Code\CSharp\Sonoras\Binary</BaseOutputPath>
+		<BaseOutputPath>C:\pikkatech.eu\Projects\Zoo\Sonoras\Code\Binary</BaseOutputPath>
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 	</PropertyGroup>
 

@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<BaseOutputPath>C:\pikkatech.eu\Projects\Spheres\Gnomon\Code\CSharp\Sonoras\Binary</BaseOutputPath>
+		<BaseOutputPath>C:\pikkatech.eu\Projects\Zoo\Sonoras\Code\Binary</BaseOutputPath>
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 		<ApplicationIcon>sonoras.ico</ApplicationIcon>
 		<Title>Sonoras</Title>
@@ -87,7 +87,7 @@
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command=" xcopy &quot;$(ProjectDir)..\..\..\..\version.toml&quot; &quot;$(TargetDir)&quot; /Y" />
+	  <Exec Command=" xcopy &quot;$(ProjectDir)..\..\version.toml&quot; &quot;$(TargetDir)&quot; /Y" />
 	</Target>
 
 </Project>

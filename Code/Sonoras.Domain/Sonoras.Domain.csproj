@@ -4,7 +4,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<BaseOutputPath>C:\pikkatech.eu\Projects\Spheres\Gnomon\Code\CSharp\Sonoras\Binary</BaseOutputPath>
+		<BaseOutputPath>C:\pikkatech.eu\Projects\Zoo\Sonoras\Code\Binary</BaseOutputPath>
 		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
 	</PropertyGroup>
 
