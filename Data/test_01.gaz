@@ -1,0 +1,39 @@
+{
+  "Locations": [
+    {
+      "Name": "Potsdam",
+      "Latitude": 52.406027,
+      "Longitude": 13.059079,
+      "Elevation": 0,
+      "TimeZoneIanaId": "Europe/Berlin",
+      "Description": "Behlertstraße 13, 14469 Potsdam"
+    },
+    {
+      "Name": "Haifa",
+      "Latitude": 32.81459968295215,
+      "Longitude": 34.98717988000406,
+      "Elevation": 0,
+      "TimeZoneIanaId": "Asia/Jerusalem",
+      "Description": "Shrine of the Báb, Haifa, 3339213, Israel"
+    },
+    {
+      "Name": "Langenhain",
+      "Latitude": 50.113728,
+      "Longitude": 8.3969,
+      "Elevation": 0,
+      "TimeZoneIanaId": "Europe/Berlin",
+      "Description": "Eppsteiner Str. 95, 65719 Hofheim am Taunus"
+    },
+    {
+      "Name": "Tromsø",
+      "Latitude": 69.68284844255562,
+      "Longitude": 18.978024244945452,
+      "Elevation": 0,
+      "TimeZoneIanaId": "Europe/Helsinki",
+      "Description": "UiT The Arctic University of Norway (UiT Norges arktiske universitet)"
+    }
+  ],
+  "SelectedLocation": null,
+  "Title": "Gazetteer 1",
+  "Description": "Basic tests"
+}

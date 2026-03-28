@@ -43,8 +43,6 @@
 			this.editToolStripMenuItem1 = new ToolStripMenuItem();
 			this.removeToolStripMenuItem = new ToolStripMenuItem();
 			this.toolsToolStripMenuItem = new ToolStripMenuItem();
-			this.altitudeCirveToolStripMenuItem = new ToolStripMenuItem();
-			this.solarEventsToolStripMenuItem = new ToolStripMenuItem();
 			this.settingsToolStripMenuItem = new ToolStripMenuItem();
 			this.helpToolStripMenuItem = new ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new ToolStripMenuItem();
@@ -177,28 +175,16 @@
 			// 
 			// toolsToolStripMenuItem
 			// 
-			this.toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.altitudeCirveToolStripMenuItem, this.solarEventsToolStripMenuItem, this.settingsToolStripMenuItem });
+			this.toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { this.settingsToolStripMenuItem });
 			this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
 			this.toolsToolStripMenuItem.Size = new Size(58, 24);
 			this.toolsToolStripMenuItem.Text = "&Tools";
-			// 
-			// altitudeCirveToolStripMenuItem
-			// 
-			this.altitudeCirveToolStripMenuItem.Name = "altitudeCirveToolStripMenuItem";
-			this.altitudeCirveToolStripMenuItem.Size = new Size(191, 26);
-			this.altitudeCirveToolStripMenuItem.Text = "&Altitude Cirve";
-			// 
-			// solarEventsToolStripMenuItem
-			// 
-			this.solarEventsToolStripMenuItem.Name = "solarEventsToolStripMenuItem";
-			this.solarEventsToolStripMenuItem.Size = new Size(191, 26);
-			this.solarEventsToolStripMenuItem.Text = "&Solar Events";
 			// 
 			// settingsToolStripMenuItem
 			// 
 			this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
 			this.settingsToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.S;
-			this.settingsToolStripMenuItem.Size = new Size(191, 26);
+			this.settingsToolStripMenuItem.Size = new Size(224, 26);
 			this.settingsToolStripMenuItem.Text = "&Settings";
 			this.settingsToolStripMenuItem.ToolTipText = "Open settings dialog";
 			this.settingsToolStripMenuItem.Click += this.OnToolsSettings;
@@ -213,7 +199,7 @@
 			// aboutToolStripMenuItem
 			// 
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new Size(224, 26);
+			this.aboutToolStripMenuItem.Size = new Size(133, 26);
 			this.aboutToolStripMenuItem.Text = "&About";
 			this.aboutToolStripMenuItem.Click += this.OnHelpAbout;
 			// 
@@ -397,8 +383,6 @@
 		private ToolStripMenuItem editToolStripMenuItem1;
 		private ToolStripMenuItem removeToolStripMenuItem;
 		private ToolStripMenuItem toolsToolStripMenuItem;
-		private ToolStripMenuItem altitudeCirveToolStripMenuItem;
-		private ToolStripMenuItem solarEventsToolStripMenuItem;
 		private ToolStripMenuItem settingsToolStripMenuItem;
 		private ToolStripMenuItem helpToolStripMenuItem;
 		private ToolStripMenuItem aboutToolStripMenuItem;
