@@ -23,11 +23,11 @@ for calculation of sun positions and solar events (sunrises, sunsets)
 ---
 
 ## Screenshots
-![Sonoras-overview](sonoras-ui.png)
+![Sonoras-overview](Design/Images/PNG/sonoras-ui.png)
 Overview
-![Sonoras-gazetteer](sonoras-ui-gazetteer.png)
+![Sonoras-gazetteer](Design/Images/PNG/sonoras-ui-gazetteer.png)
 Gazetteer management
-![Sonoras-adding a location](sonoras-ui-add-location.png)
+![Sonoras-adding a location](Design/Images/PNG/sonoras-ui-add-location.png)
 Adding a location
 ---
 
@@ -56,11 +56,11 @@ Adding a location
 
 * Menu Tools
   * Settings → Opens Settings dialog.
-  ![Sonoras-settings dialog](sonoras-ui-settings.png){:height="256px" width="256px"}
+  ![Sonoras-settings dialog](Design/Images/PNG/sonoras-ui-settings.png){:height="256px" width="256px"}
   
   At the moment there are only two settings parameters that define if the last used gazetteer and the last used location should be automatically loaded and selected.
   * Altitude curve → comes in a future version.
-  * Solae events → A list of sunrises and sunsets for a Gregoriasn year and a location → comes in a future version.
+  * Solar events → A list of sunrises and sunsets for a Gregoriasn year and a location → comes in a future version.
 
 ---
 
