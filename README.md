@@ -60,8 +60,6 @@ Adding a location
   <img alt="Settings" src="Design/Images/PNG/sonoras-ui-settings.png" width="400" />
   
   At the moment there are only two settings parameters that define if the last used gazetteer and the last used location should be automatically loaded and selected.
-  * Altitude curve → comes in a future version.
-  * Solar events → A list of sunrises and sunsets for a Gregoriasn year and a location → comes in a future version.
 
 ---
 
