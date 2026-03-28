@@ -56,7 +56,8 @@ Adding a location
 
 * Menu Tools
   * Settings → Opens Settings dialog.
-  ![Sonoras-settings dialog](Design/Images/PNG/sonoras-ui-settings.png)
+  
+  <img alt="Settings" src="Design/Images/PNG/sonoras-ui-settings.png" width="400" />
   
   At the moment there are only two settings parameters that define if the last used gazetteer and the last used location should be automatically loaded and selected.
   * Altitude curve → comes in a future version.
